@@ -1,0 +1,71 @@
+import React, { useEffect } from "react";
+import Locations from "./Components/Locations";
+import FAQ from "./Components/FAQ";
+import ContactForm from "./Components/ContactForm";
+import ContactInfo from "./Components/ContactInfo";
+import { useLocation } from "react-router-dom";
+
+function Contact() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace("#", ""));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location]);
+  return (
+    <div className="w-full bg-background text-textPrimary">
+
+   {/* Get in Touch Banner */}
+<section className="bg-background text-[#8B4513]">
+  <div className="max-w-7xl mx-auto px-6 lg:px-16 py-24 text-center space-y-6">
+    <h1 className="text-4xl md:text-6xl font-extrabold">
+      Get in Touch
+    </h1>
+    <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+      Have questions? Our team is here to guide you every step of the way.
+    </p>
+
+    {/* Contact Button */}
+     <div className="flex flex-col sm:flex-row justify-center gap-6">
+  <a
+    href="tel:+917907414712"
+    className="w-full sm:w-64 px-8 py-4 bg-[#8B4513] text-white font-semibold rounded-xl shadow-md hover:bg-[#A0522D] transition-colors duration-300 text-center"
+  >
+    Call Us
+  </a>
+</div>
+  </div>
+</section>
+
+
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-16 py-24 space-y-32">
+
+        {/* Contact Info + Form */}
+        <section className="grid lg:grid-cols-2 gap-16">
+          <ContactInfo />
+          <ContactForm />
+        </section>
+
+        {/* Locations */}
+         <div id="location">
+  <Locations />
+</div>
+
+        
+
+        {/* FAQ */}
+        <FAQ />
+
+      </div>
+    </div>
+  );
+}
+
+export default Contact;

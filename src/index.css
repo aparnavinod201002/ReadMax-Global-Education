@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+/* -----------------------------
+   Global Styles
+----------------------------- */
+* {
+  font-family: "Mukta", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #EDE7E5; /* Soft Stone for page background */
+  color: #2F1B0C; /* Default text: Dark Chocolate */
+}
+
+/* -----------------------------
+   Scrollbar
+----------------------------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #EDE7E5; /* Soft Stone */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8B4513; /* Earthy Brown */
+  border-radius: 10px;
+}
+
+/* -----------------------------
+   Background Colors
+----------------------------- */
+.softStone-bg {
+  background-color: #EDE7E5; /* Light neutral */
+}
+
+.warmTaupe-bg {
+  background-color: #BEB4A7; /* Soft muted brown for cards */
+}
+
+.earthyBrown-bg {
+  background-color: #8D7022; /* Accent color, hover & buttons */
+}
+
+.darkChocolate-bg {
+  background-color: #2F1B0C; /* Strong dark background for cards & headings */
+}
+
+/* -----------------------------
+   Text Colors
+----------------------------- */
+.softStone-text {
+  color: #EDE7E5; /* Light text on dark backgrounds */
+}
+
+.warmTaupe-text {
+  color: #BEB4A7; /* Muted text on soft backgrounds */
+}
+
+.earthyBrown-text {
+  color: #8D7022; /* Accent text color */
+}
+
+.darkChocolate-text {
+  color: #2F1B0C; /* Dark text on light backgrounds */
+}
+
+/* -----------------------------
+   Buttons & Hover Effects
+----------------------------- */
+.button-primary {
+  background-color: #8D7022; /* Earthy Brown */
+  color: #EDE7E5; /* Light text */
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #2F1B0C; /* Dark Chocolate */
+  color: #EDE7E5; /* Keep text visible */
+}
+
+.card {
+  background-color: #2F1B0C; /* Dark Chocolate */
+  color: #EDE7E5; /* Soft Stone text */
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #8D7022; /* Earthy Brown on hover */
+  transform: scale(1.05);
+}
+
+/* -----------------------------
+   Headings
+----------------------------- */
+.heading-primary {
+  color: #2F1B0C; /* Dark Chocolate */
+  font-weight: 800;
+}
+
+.heading-secondary {
+  color: #8D7022; /* Earthy Brown accent */
+}
+
+/* -----------------------------
+   Misc
+----------------------------- */
+nav.navbar {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  z-index: 50;
+}
