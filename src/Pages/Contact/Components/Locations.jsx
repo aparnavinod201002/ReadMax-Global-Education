@@ -15,5 +15,5 @@ function Locations() {
     </section>
   );
 }
-//new tesr
+
 export default Locations;
