@@ -3,8 +3,10 @@ import CoreServices from "./CoreServices";
 import SpecializedServices from "./SpecializedServices";
 import WhyChooseUs from "./WhyChooseUs";
 import Process from "./Process";
+import { useNavigate } from "react-router-dom";
 
 function Services() {
+  const navigate = useNavigate();
   return (
     <div className="w-full bg-background text-textPrimary">
 
@@ -21,18 +23,21 @@ function Services() {
 
     <div className="flex justify-center gap-6 pt-6">
       {/* Know More About Us */}
-    <button
-  className="px-8 py-3 bg-white hover:bg-gray-100 text-[#8B4513] font-semibold rounded-xl border border-[#8B4513] transition"
->
-  Know More About Us
-</button>
+     {/* Know More About Us */}
+      <button
+        onClick={() => navigate("/contact")}
+        className="px-8 py-3 bg-white hover:bg-gray-100 text-[#8B4513] font-semibold rounded-xl border border-[#8B4513] transition"
+      >
+        Know More About Us
+      </button>
 
       {/* Contact Us */}
-      <button
-        className="px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-[#8B4513] hover:border-[#8B4513] hover:text-white font-semibold rounded-xl transition"
+      <a
+        href="tel:+917907414712"
+        className="px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-[#8B4513] hover:border-[#8B4513] hover:text-white font-semibold rounded-xl transition text-center"
       >
         Contact Us
-      </button>
+      </a>
     </div>
   </div>
 </section>

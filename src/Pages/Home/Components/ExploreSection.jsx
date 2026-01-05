@@ -3,36 +3,36 @@ import { FaLaptopCode, FaBusinessTime, FaCog, FaBuilding } from "react-icons/fa"
 import { Link } from "react-router-dom";
 
 function ExploreSection() {
-  const departments = [
-    {
-      id: 1,
-      name: "Computer Science",
-      description:
-        "Dive into cutting-edge CS programs and innovative courses designed for the future.",
-      icon: <FaLaptopCode className="text-5xl text-[#8B4513]" />,
-    },
-    {
-      id: 2,
-      name: "Business Administration",
-      description:
-        "Explore our comprehensive Business programs and build entrepreneurial skills.",
-      icon: <FaBusinessTime className="text-5xl text-[#8B4513]" />,
-    },
-    {
-      id: 3,
-      name: "Mechanical Engineering",
-      description:
-        "Discover Mechanical Engineering courses, labs, and hands-on learning opportunities.",
-      icon: <FaCog className="text-5xl text-[#8B4513]" />,
-    },
-    {
-      id: 4,
-      name: "Civil Engineering",
-      description:
-        "Learn Civil Engineering with a focus on design, construction, and sustainable infrastructure.",
-      icon: <FaBuilding className="text-5xl text-[#8B4513]" />,
-    },
-  ];
+const departments = [
+  {
+    id: 1,
+    name: "Medical & Healthcare",
+    description:
+      "Gain in-depth knowledge in medical and healthcare fields, focusing on patient care, clinical practices, diagnostics, and modern healthcare technologies.",
+    icon: <FaLaptopCode className="text-5xl text-[#8B4513]" />,
+  },
+  {
+    id: 2,
+    name: "Management & Business",
+    description:
+      "Develop strong leadership, management, and entrepreneurial skills through practical business strategies, finance, marketing, and organizational studies.",
+    icon: <FaBusinessTime className="text-5xl text-[#8B4513]" />,
+  },
+  {
+    id: 3,
+    name: "Engineering & Technology",
+    description:
+      "Explore engineering and technology programs that emphasize innovation, problem-solving, hands-on projects, and real-world technical applications.",
+    icon: <FaCog className="text-5xl text-[#8B4513]" />,
+  },
+  {
+    id: 4,
+    name: "Hospitality & Tourism",
+    description:
+      "Learn the fundamentals of hospitality and tourism management, including customer service, hotel operations, travel management, and global tourism practices.",
+    icon: <FaBuilding className="text-5xl text-[#8B4513]" />,
+  },
+];
 
   return (
     <section className="py-20 bg-gradient-to-b from-[#F5F0EB] to-[#EDE7E5]">

@@ -8,13 +8,13 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* About */}
         <div>
-          <h3 className="text-xl font-bold text-white mb-4">Read Max Educational</h3>
+          <h3 className="text-xl font-bold text-white mb-4">ReadMax Global Education</h3>
           <p className="text-white mb-4">
             Helping students find their perfect college match and secure admissions in their preferred departments. Your educational journey starts here.
           </p>
           <div className="flex gap-4">
           <a
-  href="https://www.instagram.com/yourusername/"
+  href="https://www.instagram.com/readmax_career_assistant"
   target="_blank"
   rel="noopener noreferrer"
   className="w-10 h-10 flex items-center justify-center bg-white-500 rounded-full text-pink hover:bg-pink-600 transition"

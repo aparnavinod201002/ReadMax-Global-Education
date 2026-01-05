@@ -27,18 +27,21 @@ function Navbar() {
         <div className="max-w-7xl mx-auto w-full px-6 md:px-12 flex items-center justify-between">
 
           {/* LOGO */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden">
-              <img
-                src={boardLogo}
-                alt="Board Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <span className="text-2xl font-bold text-white tracking-wide">
-              ReadMax <span className="font-normal">Global Educational</span>
-            </span>
-          </Link>
+        {/* LOGO */}
+<Link to="/" className="flex items-center gap-3">
+  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1">
+    <img
+      src={boardLogo}
+      alt="Board Logo"
+      className="w-full h-full object-cover rounded-full"
+    />
+  </div>
+
+  <span className="text-2xl font-bold text-white tracking-wide">
+    ReadMax <span className="font-normal">Global Educational</span>
+  </span>
+</Link>
+
 
           {/* DESKTOP MENU */}
           <ul className="hidden md:flex items-center gap-10 text-white font-medium text-lg">

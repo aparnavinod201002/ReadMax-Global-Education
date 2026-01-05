@@ -21,7 +21,7 @@ function ContactInfo() {
         <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
        <div className="flex gap-4">
        <a
-  href="https://www.instagram.com/yourusername/" // replace with your real Instagram handle
+  href="https://www.instagram.com/readmax_career_assistant" // replace with your real Instagram handle
   target="_blank"
   rel="noopener noreferrer"
   className="w-10 h-10 flex items-center justify-center bg-[#8B4513] text-white rounded-full hover:bg-[#A0522D] transition"

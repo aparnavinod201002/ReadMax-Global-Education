@@ -2,32 +2,33 @@ import React from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 function SuccessStories() {
-  const stories = [
-    {
-      id: 1,
-      name: "Aparna Vinod",
-      role: "Computer Science Graduate",
-      story:
-        "Thanks to this platform, I found the perfect college and guidance for my career. It completely changed my academic journey!",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
-    },
-    {
-      id: 2,
-      name: "Rahul Sharma",
-      role: "Business Administration Student",
-      story:
-        "The courses and mentorship provided were exceptional. I achieved my goals faster than I imagined!",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-    },
-    {
-      id: 3,
-      name: "Sneha Nair",
-      role: "Mechanical Engineering Graduate",
-      story:
-        "The support and resources helped me excel in my field. I highly recommend this platform to everyone.",
-      image: "https://randomuser.me/api/portraits/women/68.jpg",
-    },
-  ];
+ const stories = [
+  {
+    id: 1,
+    name: "Ashna Humayoon",
+    role: "B.Sc Accident & Emergency Care",
+    story:
+      "This platform helped me choose the right college for Accident and Emergency Care and guided me through every step of the admission process. The support and counselling I received gave me confidence to build a strong career in emergency healthcare services.",
+    image: "https://randomuser.me/api/portraits/women/45.jpg",
+  },
+  {
+    id: 2,
+    name: "Anila Binoy",
+    role: "B.Sc Radiology & Imaging Technology",
+    story:
+      "With expert guidance and clear information about colleges and courses, I was able to pursue Radiology and Imaging Technology confidently. The counselling and admission support made the entire process smooth and stress-free.",
+    image: "https://randomuser.me/api/portraits/women/36.jpg",
+  },
+  {
+    id: 3,
+    name: "Sandra Saji",
+    role: "B.Sc Nursing",
+    story:
+      "The personalised counselling and admission guidance helped me select the right nursing college. From course selection to admission completion, the support I received played a key role in shaping my career in nursing.",
+    image: "https://randomuser.me/api/portraits/women/62.jpg",
+  },
+];
+
 
   return (
     <section className="py-20 bg-[#EDE7E5]">
