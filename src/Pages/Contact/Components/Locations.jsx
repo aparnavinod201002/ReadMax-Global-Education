@@ -15,5 +15,5 @@ function Locations() {
     </section>
   );
 }
-
+//new
 export default Locations;
