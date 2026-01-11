@@ -47,8 +47,8 @@ function HeroSection() {
         style={{ backgroundImage: `url(${HeroImage})` }}
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* Overlay (warm taupe dark) */}
+      <div className="absolute inset-0 bg-[#3A2A0A]/60" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
@@ -65,7 +65,7 @@ function HeroSection() {
           {/* Description */}
           <p
             ref={paragraphRef}
-            className="text-white text-lg md:text-2xl max-w-2xl mb-12"
+            className="text-[#F5EFE9] text-lg md:text-2xl max-w-2xl mb-12"
           >
             Discover your ideal college and achieve admission success with
             expert guidance.
@@ -75,16 +75,18 @@ function HeroSection() {
           <div
             ref={buttonsRef}
             className="flex flex-wrap gap-6"
-          ><Link to="/contact">
-  <button className="bg-[#8B4513] hover:bg-[#7A3E0E] text-white px-12 py-4 rounded-full text-lg font-semibold shadow-xl transition">
-    Get Started
-  </button>
-</Link>
-           <Link to="/about">
-  <button className="border-2 border-white text-white px-12 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-black transition">
-    Learn More
-  </button>
-</Link>
+          >
+            <Link to="/contact">
+              <button className="bg-[#8E745F] hover:bg-[#7C6451] text-white px-12 py-4 rounded-full text-lg font-semibold shadow-xl transition">
+                Get Started
+              </button>
+            </Link>
+
+            <Link to="/about">
+              <button className="border-2 border-[#8E745F] text-[#F5EFE9] px-12 py-4 rounded-full text-lg font-semibold hover:bg-[#8E745F] hover:text-white transition">
+                Learn More
+              </button>
+            </Link>
           </div>
 
         </div>

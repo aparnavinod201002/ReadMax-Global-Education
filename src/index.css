@@ -4,14 +4,14 @@
    Global Styles
 ----------------------------- */
 * {
- font-family: "Mukta", sans-serif;
-   box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: #EDE7E5; /* Soft Stone for page background */
-  color: #2F1B0C; /* Default text: Dark Chocolate */
+  background-color: #1f1f1f; /* Dark Gray background like Navbar */
+  color: #f3e5ab; /* Light Tan text for paragraphs */
 }
 
 /* -----------------------------
@@ -22,58 +22,54 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #EDE7E5; /* Soft Stone */
+  background-color: #1f1f1f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #8B4513; /* Earthy Brown */
+  background-color: #8E745F; /* Amber accent */
   border-radius: 10px;
 }
 
 /* -----------------------------
-   Background Colors
+   Background Colors (Theme)
 ----------------------------- */
-.softStone-bg {
-  background-color: #EDE7E5; /* Light neutral */
+.darkGray-bg {
+  background-color: #1f1f1f;
 }
 
-.warmTaupe-bg {
-  background-color: #BEB4A7; /* Soft muted brown for cards */
+.card-bg {
+  background-color: #2a2a2a;
 }
 
-.earthyBrown-bg {
-  background-color: #8D7022; /* Accent color, hover & buttons */
+.accent-bg {
+  background-color: #e6b800;
 }
 
-.darkChocolate-bg {
-  background-color: #2F1B0C; /* Strong dark background for cards & headings */
+.accent-hover-bg {
+  background-color: #c99700;
 }
 
 /* -----------------------------
-   Text Colors
+   Text Colors (Theme)
 ----------------------------- */
-.softStone-text {
-  color: #EDE7E5; /* Light text on dark backgrounds */
+.white-text {
+  color: #ffffff;
 }
 
-.warmTaupe-text {
-  color: #BEB4A7; /* Muted text on soft backgrounds */
+.gray-text {
+  color: #f3e5ab; /* light tan for secondary text */
 }
 
-.earthyBrown-text {
-  color: #8D7022; /* Accent text color */
-}
-
-.darkChocolate-text {
-  color: #2F1B0C; /* Dark text on light backgrounds */
+.accent-text {
+  color: #e6b800;
 }
 
 /* -----------------------------
    Buttons & Hover Effects
 ----------------------------- */
 .button-primary {
-  background-color: #8D7022; /* Earthy Brown */
-  color: #EDE7E5; /* Light text */
+  background-color: #e6b800; /* Amber */
+  color: #1f1f1f; /* Dark text */
   font-weight: 700;
   border-radius: 12px;
   padding: 12px 24px;
@@ -81,21 +77,25 @@ body {
 }
 
 .button-primary:hover {
-  background-color: #2F1B0C; /* Dark Chocolate */
-  color: #EDE7E5; /* Keep text visible */
+  background-color: #c99700; /* Dark Gold */
+  color: #ffffff;
 }
 
+/* -----------------------------
+   Cards
+----------------------------- */
 .card {
-  background-color: #2F1B0C; /* Dark Chocolate */
-  color: #EDE7E5; /* Soft Stone text */
+  background-color: #2a2a2a; /* Dark gray card */
+  color: #f3e5ab;
   border-radius: 24px;
   padding: 2.5rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(230, 184, 0, 0.25);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .card:hover {
-  background-color: #8D7022; /* Earthy Brown on hover */
+  background-color: #e6b800; /* Amber hover */
+  color: #1f1f1f;
   transform: scale(1.05);
 }
 
@@ -103,16 +103,16 @@ body {
    Headings
 ----------------------------- */
 .heading-primary {
-  color: #2F1B0C; /* Dark Chocolate */
+  color: #ffffff;
   font-weight: 800;
 }
 
 .heading-secondary {
-  color: #8D7022; /* Earthy Brown accent */
+  color: #e6b800;
 }
 
 /* -----------------------------
-   Misc
+   Navbar
 ----------------------------- */
 nav.navbar {
   position: absolute;

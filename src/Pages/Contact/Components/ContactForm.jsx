@@ -11,6 +11,39 @@ function ContactForm() {
     message: "",
   });
 
+  const [errors, setErrors] = useState({});
+const validate = () => {
+  const newErrors = {};
+
+  if (!formData.name.trim()) {
+    newErrors.name = "Name is required";
+  }
+
+  if (!formData.email.trim()) {
+    newErrors.email = "Email is required";
+  } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+    newErrors.email = "Enter a valid email address";
+  }
+
+  if (!formData.phone.trim()) {
+    newErrors.phone = "Phone number is required";
+  } else if (!/^\d{10}$/.test(formData.phone)) {
+    newErrors.phone = "Phone number must be 10 digits";
+  }
+
+  if (!formData.subject.trim()) {
+    newErrors.subject = "Subject is required";
+  }
+
+  if (!formData.message.trim()) {
+    newErrors.message = "Message is required";
+  }
+
+  setErrors(newErrors);
+  return Object.keys(newErrors).length === 0;
+};
+
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -20,6 +53,8 @@ function ContactForm() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
+      if (!validate()) return;
+
 
     try {
       await emailjs.send(
@@ -47,64 +82,76 @@ function ContactForm() {
     <>
    
     <div className="bg-white rounded-3xl p-10 shadow-sm">
-      <h2 className="text-2xl font-bold mb-8">Send a Message</h2>
+  <h2 className="text-2xl font-bold mb-8 text-[#8E745F]">Send a Message</h2>
 
-      <form className="space-y-6" onSubmit={sendEmail}>
-        <input
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          placeholder="Your Name"
-          className="w-full border rounded-xl px-4 py-3"
-          required
-        />
-
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="Your Email"
-          className="w-full border rounded-xl px-4 py-3"
-          required
-        />
-
-        <input
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-          placeholder="Phone Number"
-          className="w-full border rounded-xl px-4 py-3"
-          required
-        />
-
-        <input
-          name="subject"
-          value={formData.subject}
-          onChange={handleChange}
-          placeholder="Subject"
-          className="w-full border rounded-xl px-4 py-3"
-          required
-        />
-
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          placeholder="Your Message"
-          rows="4"
-          className="w-full border rounded-xl px-4 py-3"
-          required
-        />
-<button
-  type="submit"
-  className="w-full px-6 py-3 bg-[#8B4513] hover:bg-[#A0522D] text-white font-semibold rounded-xl transition"
->
-  Submit
-</button>
-
-      </form>
+  <form className="space-y-6 text-[#8E745F]" onSubmit={sendEmail}>
+    
+    <div>
+      <input
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        placeholder="Your Name"
+        className="w-full border rounded-xl px-4 py-3"
+      />
+      {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
     </div>
+
+    <div>
+      <input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="Your Email"
+        className="w-full border rounded-xl px-4 py-3"
+      />
+      {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+    </div>
+
+    <div>
+      <input
+        name="phone"
+        value={formData.phone}
+        onChange={handleChange}
+        placeholder="Phone Number"
+        className="w-full border rounded-xl px-4 py-3"
+      />
+      {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+    </div>
+
+    <div>
+      <input
+        name="subject"
+        value={formData.subject}
+        onChange={handleChange}
+        placeholder="Subject"
+        className="w-full border rounded-xl px-4 py-3"
+      />
+      {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
+    </div>
+
+    <div>
+      <textarea
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        placeholder="Your Message"
+        rows="4"
+        className="w-full border rounded-xl px-4 py-3"
+      />
+      {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+    </div>
+
+    <button
+      type="submit"
+      className="w-full px-6 py-3 bg-[#8E745F] hover:bg-[#A0522D] text-white font-semibold rounded-xl transition"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+
     </>
   );
 }

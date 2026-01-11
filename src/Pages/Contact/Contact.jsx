@@ -22,12 +22,12 @@ function Contact() {
     <div className="w-full bg-background text-textPrimary">
 
    {/* Get in Touch Banner */}
-<section className="bg-background text-[#8B4513]">
+<section className="bg-gradient-to-r from-[#6F5643] to-white text-[#6F5643]">
   <div className="max-w-7xl mx-auto px-6 lg:px-16 py-24 text-center space-y-6">
-    <h1 className="text-4xl md:text-6xl font-extrabold">
+    <h1 className="text-4xl md:text-6xl text-white font-extrabold">
       Get in Touch
     </h1>
-    <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+    <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90 text-white">
       Have questions? Our team is here to guide you every step of the way.
     </p>
 
@@ -35,7 +35,7 @@ function Contact() {
      <div className="flex flex-col sm:flex-row justify-center gap-6">
   <a
     href="tel:+917907414712"
-    className="w-full sm:w-64 px-8 py-4 bg-[#8B4513] text-white font-semibold rounded-xl shadow-md hover:bg-[#A0522D] transition-colors duration-300 text-center"
+    className="w-full sm:w-64 px-8 py-4 bg-[#8E745F] text-white font-semibold rounded-xl shadow-md hover:bg-[#A0522D] transition-colors duration-300 text-center"
   >
     Call Us
   </a>
@@ -45,13 +45,15 @@ function Contact() {
 
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-16 py-24 space-y-32">
+      <div className=" mx-auto px-6 lg:px-16 py-24 space-y-32 w-full bg-gradient-to-b from-[#F5F0EB] to-[#EDE7E5]">
 
         {/* Contact Info + Form */}
-        <section className="grid lg:grid-cols-2 gap-16">
-          <ContactInfo />
-          <ContactForm />
-        </section>
+       <section className="max-w-6xl mx-auto">
+  <div className="grid lg:grid-cols-2 gap-16 bg-[#8E745F] rounded-3xl shadow-lg p-10 md:p-14">
+    <ContactInfo />
+    <ContactForm />
+  </div>
+</section>
 
         {/* Locations */}
          <div id="location">

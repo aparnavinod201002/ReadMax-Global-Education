@@ -16,21 +16,21 @@ function WhyChooseUs() {
 
       {/* Content */}
       <div className="space-y-6">
-        <h2 className="text-3xl font-bold">Why Choose Us</h2>
+        <h2 className="text-3xl font-bold text-[#6F5643]">Why Choose Us</h2>
 
-        <p>
+        <p className="text-[#6F5643]">
           We combine experience, transparency, and global partnerships to ensure
           students make confident academic decisions.
         </p>
 
-        <ul className="space-y-3 list-disc list-inside">
+        <ul className="space-y-3 list-disc list-inside text-[#6F5643]">
           <li>Certified counselors</li>
           <li>End-to-end support</li>
           <li>Global university network</li>
         </ul>
  <button
       onClick={() => navigate("/contact")} // Redirect to Contact page
-      className="px-8 py-3 bg-[#8B4513] hover:bg-[#A0522D] text-white font-semibold rounded-xl transition"
+      className="px-8 py-3 bg-[#6F5643] hover:bg-[#A0522D] text-white font-semibold rounded-xl transition"
     >
       Learn More About Us
     </button>

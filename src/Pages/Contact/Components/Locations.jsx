@@ -3,7 +3,7 @@ import React from "react";
 function Locations() {
   return (
     <section className="space-y-10">
-      <h2 className="text-3xl font-bold text-center">Our Location</h2>
+      <h2 className="text-3xl font-bold text-center text-[#8E745F]">Our Location</h2>
 
       <div className="rounded-3xl overflow-hidden shadow-sm">
 

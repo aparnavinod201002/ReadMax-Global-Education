@@ -11,7 +11,7 @@ function Services() {
     <div className="w-full bg-background text-textPrimary">
 
       {/* Hero Section */}
-   <section className="bg-gradient-to-r from-[#8B4513] to-[#A0522D] text-white">
+   <section className="bg-gradient-to-r from-[#6F5643] to-white text-white">
   <div className="max-w-7xl mx-auto px-6 lg:px-16 py-28 space-y-8 text-center">
     <h1 className="text-4xl md:text-6xl font-extrabold">
       Our Services
@@ -34,7 +34,7 @@ function Services() {
       {/* Contact Us */}
       <a
         href="tel:+917907414712"
-        className="px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-[#8B4513] hover:border-[#8B4513] hover:text-white font-semibold rounded-xl transition text-center"
+        className="px-8 py-3 bg-transparent border-2 border-white text-white hover:bg-[#6F5643] hover:border-white hover:text-white font-semibold rounded-xl transition text-center"
       >
         Contact Us
       </a>
@@ -44,11 +44,8 @@ function Services() {
 
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-16 py-24 space-y-32">
-
-        {/* Core Services */}
-        <CoreServices />
-
+      <div className="w-full bg-white">
+  <div className="max-w-7xl mx-auto px-6 lg:px-16 py-24 space-y-32">
         {/* Specialized Services */}
         <SpecializedServices />
 
@@ -59,8 +56,10 @@ function Services() {
         <Process />
 
       </div>
+      </div>
     </div>
   );
 }
+
 
 export default Services;

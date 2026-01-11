@@ -42,7 +42,7 @@ function Journey() {
  {/* Learn More Button */}
         <button
           onClick={() => navigate("/services")} // <-- redirect to services
-          className="px-6 py-3 bg-[#8B4513] text-white rounded-lg hover:bg-[#A0522D] transition font-semibold"
+          className="px-6 py-3 bg-[#6F5643] text-white rounded-lg hover:bg-[#4B3A2D] transition font-semibold"
         >
           Learn More
         </button>
