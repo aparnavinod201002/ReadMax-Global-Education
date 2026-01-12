@@ -35,27 +35,30 @@ function CoreServices() {
   ];
 
   return (
-    <section className="space-y-12">
-      <h2 className="text-3xl font-bold text-center">Core Services</h2>
+ <section className="space-y-12">
+  <h2 className="text-3xl font-bold text-center text-[#8E745F]">
+    Core Services
+  </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition
-                       flex flex-col h-full"
-          >
-            <h3 className="text-xl font-semibold text-center">
-              {service.title}
-            </h3>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {services.map((service, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition
+                   flex flex-col h-full"
+      >
+        <h3 className="text-xl font-semibold text-center mb-4 text-[#8E745F]">
+          {service.title}
+        </h3>
 
-            <p className="mt-4 text-sm text-textSecondary leading-relaxed text-left flex-grow">
-              {service.description}
-            </p>
-          </div>
-        ))}
+        <p className="mt-4 text-sm leading-relaxed text-left flex-grow text-[#8E745F]">
+          {service.description}
+        </p>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
   );
 }
 

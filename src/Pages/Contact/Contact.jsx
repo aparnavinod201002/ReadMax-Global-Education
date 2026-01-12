@@ -35,7 +35,7 @@ function Contact() {
      <div className="flex flex-col sm:flex-row justify-center gap-6">
   <a
     href="tel:+917907414712"
-    className="w-full sm:w-64 px-8 py-4 bg-[#8E745F] text-white font-semibold rounded-xl shadow-md hover:bg-[#A0522D] transition-colors duration-300 text-center"
+    className="w-full sm:w-64 px-8 py-4 bg-[#8E745F] text-white font-semibold rounded-xl shadow-md hover:bg-white hover:text-[#8E745F] transition-colors duration-300 text-center"
   >
     Call Us
   </a>

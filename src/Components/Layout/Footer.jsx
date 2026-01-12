@@ -29,10 +29,10 @@ function Footer() {
         <div>
           <h3 className="text-xl font-bold mb-4" style={{ color: '#FFFDF5' }}>Departments</h3>
           <ul className="space-y-2" style={{ color: '#FFFDF5' }}>
-            <li className="hover:text-[#8E745F] cursor-pointer">Medical & Healthcare</li>
-            <li className="hover:text-[#8E745F] cursor-pointer">Management & Business</li>
-            <li className="hover:text-[#8E745F] cursor-pointer">Engineering & Technology</li>
-            <li className="hover:text-[#8E745F] cursor-pointer">Hospitality & Tourism</li>
+            <li className="hover:text-[#D6C2AA] cursor-pointer">Medical & Healthcare</li>
+            <li className="hover:text-[#D6C2AA] cursor-pointer">Management & Business</li>
+            <li className="hover:text-[#D6C2AA] cursor-pointer">Engineering & Technology</li>
+            <li className="hover:text-[#D6C2AA] cursor-pointer">Hospitality & Tourism</li>
           </ul>
         </div>
 
